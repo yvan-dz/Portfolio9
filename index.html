@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio en Feu - Yannick N'Djomo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div  id="particle-container"></div>
+    <header class="hero" >
+        <div class="hero-content">
+            <h1>Yannick N'Djomo</h1>
+            <p>Étudiant en Chimie des Matériaux</p>
+            <p class="hero-quote">"Transformez la science en énergie brute."</p>
+            <a href="#about" class="cta-button">Découvrir</a>
+        </div>
+        <div class="flame-animation"></div>
+    </header>
+    
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yannick N'Djomo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Éducation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Expérience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research">Recherches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mt-5 pt-4">
+        <!-- About Section -->
+        <section id="about" class="section about py-5" >
+            <div class="container">
+                <div class="row align-items-center" >
+                    <div class="col-md-6 about-content" >
+                        <h2>À propos de moi</h2>
+                        <p>Je suis Yannick N'Djomo, un passionné de chimie des matériaux, particulièrement fasciné par la façon dont les éléments peuvent se transformer sous l'effet de la chaleur. Mon objectif est de repousser les limites de la science en explorant les réactions extrêmes qui créent de nouvelles opportunités dans l'industrie énergétique.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://via.placeholder.com/400x400" alt="Yannick N'Djomo" class="img-fluid about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education py-5 bg-dark text-light">
+            <div class="container">
+                <h2 class="text-center">Éducation</h2>
+                <div class="education-item mt-4">
+                    <h3>Master en Chimie des Matériaux</h3>
+                    <p>Université des Sciences, Paris</p>
+                    <p>2022 - 2024</p>
+                </div>
+                <div class="education-item mt-4">
+                    <h3>Licence en Chimie</h3>
+                    <p>Université de Grenoble</p>
+                    <p>2019 - 2022</p>
+                </div>
+                <div class="education-item mt-4">
+                    <h3>Baccalauréat Scientifique</h3>
+                    <p>Lycée National, Douala</p>
+                    <p>2016 - 2019</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience py-5">
+            <div class="container">
+                <h2 class="text-center">Expérience</h2>
+                <div class="experience-item mt-4">
+                    <h3>Stagiaire en Recherche Matériaux</h3>
+                    <p>Institut National de Recherche en Chimie, Paris</p>
+                    <p>Juillet 2023 - Septembre 2023</p>
+                    <p>Travail sur la synthèse de nouveaux matériaux résistants à des températures extrêmes pour des applications dans l'industrie aérospatiale.</p>
+                </div>
+                <div class="experience-item mt-4">
+                    <h3>Assistant de Laboratoire</h3>
+                    <p>Université de Grenoble</p>
+                    <p>Septembre 2021 - Juin 2022</p>
+                    <p>Aide à la préparation des expériences en laboratoire pour les cours de chimie avancée, et assistance à la recherche sur les polymères conducteurs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section research py-5 bg-dark text-light">
+            <div class="container">
+                <h2 class="text-center">Recherches</h2>
+                <div class="research-item mt-4">
+                    <h3>Étude sur la Conductivité Thermique des Matériaux</h3>
+                    <p>Analyse des propriétés thermiques des matériaux composites pour optimiser leur utilisation dans des environnements à haute température.</p>
+                </div>
+                <div class="research-item mt-4">
+                    <h3>Recherche sur la Fusion des Métaux</h3>
+                    <p>Exploration des processus de fusion à des températures élevées et étude des alliages métalliques à haute résistance thermique.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact py-5">
+            <div class="container">
+                <h2 class="text-center">Contact</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form class="contact-form mt-4">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Nom" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <button id="btn" type="submit" class="btn btn-primary w-100">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3">
+        <p>&copy; 2024 Yannick N'Djomo. Tous droits réservés.</p>
+        <p>Conçu par <a href="https://websnape.de/" target="_blank">WebSnape by Yvan</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
